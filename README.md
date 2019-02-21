@@ -1,1 +1,1 @@
-# -tea_shop_arinfo
+# tea_shop_arinfo
