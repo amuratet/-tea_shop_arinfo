@@ -1,0 +1,384 @@
+/* DOCUMENT INFORMATION
+    -document : thé thème
+    -auteur : xxx
+    -version 1.0.0
+*/
+
+/* COLORS
+    - defaut body text    #eee
+    - h1                  #eee
+    - h2                  #333
+    - h3
+
+    - button
+    - button:hover
+
+    - icon                #23a74c
+
+    - border
+*/
+
+/* FONTS
+    - defaut     Lato
+    - subtitle
+*/
+
+/* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+    3. =PRODUITS
+*/
+
+/* GLOBAL
+============================== */
+
+html {
+    background-color: #fff;
+}
+h1, h2, h3, h4 {
+    font-family: 'Lato', arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 8px;
+}
+h1 {
+    color: #eee;
+}
+h2 {
+    color: #333;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 100px;
+    content: " ";
+    margin: 10px auto 0 auto;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+h4 {
+
+}
+
+p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+/* HEADER
+============================== */
+header {
+    background-image: linear-gradient(rgba(0,242,96,0.4), rgba(7,117,230,0.6)), url(../images/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.home-title {
+    position: absolute;
+    top: 30%;
+}
+.home-title h1 {
+    font-size: 340%;
+    color: #fff;
+}
+.home-title span {
+    font-weight: 700;
+}
+.home-title p {
+    color: #fff;
+}
+
+/* BOUTON */
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    /* correction perso */
+    color: #fff;
+    font-weight: 700;
+    transition: background-color 1s, color 1s, border 1s;
+}
+.btn-full {
+    background-color: azure;
+    color: #5ee077;
+    margin-right: 15px;
+}
+.btn-ghost {
+    border: 1px solid #fff;
+}
+.btn-full:hover {
+    background-color: #5ee077;
+    color: #fff;
+}
+.btn-ghost:hover {
+    background-color: #5ee077;
+    color: #fff;
+    border: 1px solid #5ee077;
+}
+
+
+/* NAV
+============================== */
+
+.my-own-bg {
+    /* background-color: #c3f1a4; */
+    background-image: linear-gradient(45deg, rgba(165, 232, 138, 0.95), rgba(40, 233, 222, 0.8));
+    border-bottom: 1px solid white;
+}
+
+/* PRODUITS
+============================== */
+
+.produits-plus {
+    margin: 20px 0;
+}
+
+.produits-plus:hover .produits-icon {
+    color: #575757;
+    transform: translateX(20px);
+}
+
+.produits-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produits-icon {
+    font-size: 34px;
+    color: #23a74c;
+    transition: all 1s;
+}
+
+
+/* FAMILLES THÉS
+============================== */
+
+.famille-the {
+    background-color: #b4e0b9;
+}
+
+.famille-details {
+    background-color: #e3d494;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.famille-details img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+.famille-details h4 {
+    text-align: center;
+}
+
+/* GALERIE PHOTOS
+============================== */
+
+.galerie-img {
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+}
+.galerie-titres {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+.galerie-titres h4 {
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0 0 5px slateblue;
+}
+
+/* CLIENTS
+============================== */
+
+.clients {
+    background-image: linear-gradient(rgba(109, 241, 39, 0.7), rgba(0, 47, 96, 0.7)), url(../images/the-paysage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.clients h2 {
+    color: #fff;
+}
+.clients h2::after {
+    background-color: #fff;
+}
+
+blockquote {
+    color: #fff;
+    font-style: italic;
+    line-height: 130%;
+}
+blockquote::before {
+    content: "\201C";
+    font-size: 800%;
+    font-family: "sanchez", arial, sans-serif;
+    position: relative;
+    top: 70px;
+    left: -20px;
+    opacity: .6;
+}
+/* blockquote::before {
+    content: " « ";
+    font-size: 500%;
+}
+span.citation-client::after {
+    position: absolute;
+    content: " » ";
+    font-size: 500%;
+} */
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/* PACKS
+============================== */
+
+.pack {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.pack h3 {
+    color: #5ee077;
+    font-weight: 400;
+}
+
+.pack h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -12px;
+    left: 5px;
+    letter-spacing: 1px;
+}
+
+.pack-premium {
+    background-color: #226711;
+    color: #fff;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #ccc;
+    /* margin-bottom: 10px; */
+}
+
+.pack-title-premium {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: #fff;
+    color: green;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.pack-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-signup {
+    text-align: center;
+}
+
+
+.btn-pack {
+    background-color: #4aa234;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.btn-pack:hover {
+    background-color: #a0eb73;
+}
+
+/* CONTACTS
+============================== */
+
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.btn-contact {
+    transition: 1s;
+    background-color: lawngreen;
+    color: #fff;
+    /* margin-right: 15px; */
+    text-shadow: 1px 1px 1px #10653a, -1px -1px 1px #10653a, 1px -1px 1px #10653a, -1px 1px 1px #10653a;
+}
+.btn-contact:hover {
+    transition: .2s;
+    text-shadow: none;
+}
+
+/* CONTACTS
+============================== */
+
+footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    padding: 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+.copyright a {
+    color: #fff;
+}
