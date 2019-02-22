@@ -12,6 +12,7 @@
         <!--styles-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="ressources/css/styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!--fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
@@ -183,7 +184,10 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="500">
                         <div class="galerie-img" style="background-image: url(ressources/images/galerie/the1.jpg)">
                             <div class="galerie-titres">
                                 <h4>Images thé 1</h4>
@@ -191,7 +195,10 @@
                         </div>
                     </div>
 
-                    <div class="col-md-8">
+                    <div class="col-md-8"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="500">
                         <div class="galerie-img" style="background-image: url(ressources/images/galerie/the2.jpg)">
                             <div class="galerie-titres">
                                 <h4>Image thé 2</h4>
@@ -202,21 +209,30 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-5"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="500">
                         <div class="galerie-img" style="background-image: url(ressources/images/galerie/the3.jpg)">
                             <div class="galerie-titres">
                                 <h4>Images thé 3</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="500">
                         <div class="galerie-img" style="background-image: url(ressources/images/galerie/the4.jpg)">
                             <div class="galerie-titres">
                                 <h4>Images thé 4</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="500">
                         <div class="galerie-img" style="background-image: url(ressources/images/galerie/the5.jpg)">
                             <div class="galerie-titres">
                                 <h4>Images thé 5</h4>
@@ -285,7 +301,7 @@
 
                 <!-- pack 1 -->
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
                         <div class="pack">
                             <div class="pack-title">
                                 <h3>Basique</h3>
@@ -309,7 +325,7 @@
                     </div>
 
                     <!-- pack 2 -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class="pack pack-premium">
                             <div class="pack-title">
                                 <h3>Prémium</h3>
@@ -335,7 +351,7 @@
                     </div>
 
                     <!-- pack 3 -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000">
                         <div class="pack">
                             <div class="pack-title">
                                 <h3>Élite</h3>
@@ -482,8 +498,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/css3-animate-it.js"></script>
+
     </body>
 </html>
